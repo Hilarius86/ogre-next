@@ -183,6 +183,10 @@ namespace Demo
             Ogre::Root *root = mGraphicsSystem->getRoot();
             root->getRenderSystem()->validateDevice( true );
         }
+        else if( arg.keysym.scancode == SDL_SCANCODE_ESCAPE )
+        {
+            mGraphicsSystem->setQuit();
+        }
         else
         {
             bool handledEvent = false;
