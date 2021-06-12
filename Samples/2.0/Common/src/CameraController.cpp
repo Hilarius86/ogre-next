@@ -83,9 +83,9 @@ namespace Demo
             mWASD[2] = true;
         else if( arg.keysym.scancode == SDL_SCANCODE_D )
             mWASD[3] = true;
-        else if( arg.keysym.scancode == SDL_SCANCODE_PAGEUP )
+        else if( arg.keysym.scancode == SDL_SCANCODE_PAGEUP || arg.keysym.scancode == SDL_SCANCODE_E )
             mSlideUpDown[0] = true;
-        else if( arg.keysym.scancode == SDL_SCANCODE_PAGEDOWN )
+        else if( arg.keysym.scancode == SDL_SCANCODE_PAGEDOWN || arg.keysym.scancode == SDL_SCANCODE_Q )
             mSlideUpDown[1] = true;
         else
             return false;
@@ -106,9 +106,9 @@ namespace Demo
             mWASD[2] = false;
         else if( arg.keysym.scancode == SDL_SCANCODE_D )
             mWASD[3] = false;
-        else if( arg.keysym.scancode == SDL_SCANCODE_PAGEUP )
+        else if( arg.keysym.scancode == SDL_SCANCODE_PAGEUP || arg.keysym.scancode == SDL_SCANCODE_E )
             mSlideUpDown[0] = false;
-        else if( arg.keysym.scancode == SDL_SCANCODE_PAGEDOWN )
+        else if( arg.keysym.scancode == SDL_SCANCODE_PAGEDOWN || arg.keysym.scancode == SDL_SCANCODE_Q )
             mSlideUpDown[1] = false;
         else
             return false;
